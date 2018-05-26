@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SHERI</string>
+
+
+    <string-array name="items">
+        <item></item>
+        <item>Рейтинг бургеров</item>
+        <item>Рейтинг заведений</item>
+        <item>Что такое SHERI</item>
+        <item>Пригласить друзей</item>
+    </string-array>
+
+
+    <!-- Titles-->
+    <string name="all">Все заведения</string>
+    <string name="my_marks">    Рейтинг бургеров</string>
+    <string name="choose_place">Выберите место</string>
+    <string name="general_marks">Рейтинг заведений</string>
+    <string name="about_sheri"> Что такое SHERI</string>
+    <string name="get_place">Выбери место и блюдо</string>
+    <string name="score_of_appearance">Оцени внешний вид</string>
+    <string name="other_marks">Оцени блюдо</string>
+    <string name="general">Итоговая оценка</string>
+    <string name="mark_place">Оцени заведение</string>
+    <string name="textTop">some text</string>
+
+
+    <!--  Buttons-->
+    <string name="add">Оценить еще блюдо</string>
+    <string name="show_map">Показать на карте</string>
+    <string name="mark_dish">Начать оценивание</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="next">Далее</string>
+    <string name="end">Завершить</string>
+    <string name="edit_dish"> Введите название</string>
+    <string name="set_place">Ваше место</string>
+
+
+    <!--  Estimated parameters-->
+    <string name="interior">Интерьер</string>
+    <string name="music">Музыка</string>
+    <string name="staff">Персонал</string>
+    <string name="purity">Чистота</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="saturation">Насыщаемость</string>
+    <string name="bun">Булка</string>
+    <string name="ingredients">Ингредиенты</string>
+    <string name="cutlet">Котлета</string>
+    <string name="succulence">Сочность</string>
+    <string name="coast">Стоимость блюда</string>
+    <string name="currency">₽</string>
+
+    <!-- Screen with rating-->
+    <string name="dish_name">Блюдо</string>
+    <string name="my_burger">Мой бургер</string>
+    <string name="place_name">Заведение</string>
+    <string name="my_place">Бургерная</string>
+    <string name="dish_mark">Оценка блюда</string>
+    <string name="add_marker">Оценка заведения - </string>
+    <string name="place_name_second"> Заведение</string>
+    <string name="general_mark">Общая оценка</string>
+    <string name="place_plus_place">Блюдо+заведение</string>
+    <string name="place">Заведение</string>
+
+    <!--  Screen about us-->
+    <string name="sheri_info">Sheri - приложение для оценки бургеров. Оценивая бургеры в Sheri вы найдете самый вкусный бургер среди посещенных заведений </string>
+    <string name="questions">Есть предложения или вопросы  тогда пишите сюда:</string>
+    <string name="email">fa-bek@mail.ru</string>
+
+
+    <!--  Remove or change this placeholder text -->
+    <string name="action_settings">Settings</string>
+    <string name="appraised_dishes">Оцененных блюд:</string>
+    <string name="mark_string">оценку</string>
+    <string name="mark_string_second">оценки</string>
+    <string name="score">балла</string>
+    <string name="score_plus">баллов</string>
+    <string name="score_one">балл</string>
+    <string name="title_activity_add">Map</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="r">Р</string>
+
+
+    <!--  Invalid user actions-->
+    <string name="wrong_place">Выбраное место должно соответствовать следующим типам: Бар, Кафе, Ресторан</string>
+    <string name="has_already">Вы уже оценивали бургер с таким названием в этом месте</string>
+    <string name="not_right_marks">Оценка должна быть в диапазоне от 1 до 10 баллов</string>
+    <string name="not_all_filds">Вы заполнили не все поля</string>
+    <string name="null_coast">Вы не ввели стоимость</string>
+
+
+    <!--  INVITATIONS -->
+    <string name="invitation_title">Отправить приглашение</string>
+    <string name="invitation_message">Скачай SHERI, и найди самый вкусный бургер!</string>
+    <string name="dish_message">Я оценил бургер \"%s\" в заведении \"%s\" на \"%s\" оцени сам, скачай SHERI</string>
+    <string name="invitation_deep_link">http://play.google.com/store/apps/details?id=com.homounikumus1.sheri</string>
+    <string name="share_body">http://play.google.com/store/apps/details?id=com.homounikumus1.sheri</string>
+    <string name="invite_fiend">Пригласить друга</string>
+    <string name="sher_mark">Поделиться оценкой</string>
+
+
+    <!--  Dialog texts -->
+    <string name="saturation_info">Здесь оценивается, насколько вы насытились бургером, голодны или нет, может хочется еще или хватит одного после того как вы съели этот бургер</string>
+    <string name="ingredients_info">Здесь оценивается, сколько дополнительных ингредиентов входит в состав бургера (огурцы, лук, салат и т.д.) мешает ли это вкусу или наоборот дополняет его</string>
+    <string name="bun_info">Здесь оценивается, насколько приятна булка на вкус, хрустит или нет, тает во рту или прилипает к зубам. Мешают ли употреблению дополнительные элементы булки, такие как кунжут, хлопья и т. д.</string>
+    <string name="cutlet_info">Здесь оценивается, насколько прожарена котлета, тает ли во рту мясо и чуствуются ли прожилки</string>
+    <string name="succulence_info">Здесь оценивается, сочный ли бургер, из-за чего вкус становится насыщеннее или наоборот это вызывает дискофмфорт</string>
+    <string name="interior_info">Здесь оценивается художественное оформление внутреннего пространства здания, обеспечивающее вам эстетически благоприятное восприятие</string>
+    <string name="music_info">Здесь оценивается, насколько музыка приятна для восприятия,слишком ли она громкая и мешает общению. Слышно дефекты при воспроизведении музыки из-за неисправности аудиоаппаратуры или нет</string>
+    <string name="staff_info">Здесь оценивается насколько приятный персонал, вежливый, быстро выполняют заказ, навязывают дополнительные услуги заведения или нет</string>
+    <string name="purity_info">Здесь оценивается, отсутствует ли грязь, мусор, и пыль внутри заведения. Внешний декор заведения, насколько он приятен для восприятия, вызывает ли положительные эмоции (как отделка у здания, старая ли вывеска)</string>
+    <string name="appearance_info">Здесь, оценивается внешний вид бургера, приятен ли он глазу, оригинален.
+        Присутствуют ли дополнительные элементы которые дополняют внешние восприятие бургера в положительную сторону</string>
+    <string name="todo">TODO</string>
+
+
+    <!-- delete -->
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+    <string name="chose">пунктов выбрано</string>
+    <string name="del">Удалить</string>
+    <string name="delete">Вы действительно хотите удалить %d %s</string>
+
+
+    <!-- prompts -->
+    <string name="did_show_item">Если вы хотите удалить оценку - нажмите на нее и удерживайте</string>
+    <string name="did_show_bun">Нажав на оцениваемый пункт вы можете онакомиться с его значением</string>
+    <string name="did_show_place">Выбранное место должно соотвествовать одной из перечисленных категорий: Кафе, Ресторан, Бар</string>
+    <string name="did_show_dish">Если название бургера или заведения очень длинные их можно скролить</string>
+
+</resources>

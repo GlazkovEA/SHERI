@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/square"
+    android:layout_height="@dimen/dish_list_height">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/low_middle_margin"
+        android:layout_marginEnd="@dimen/height_middle_margin"
+        android:layout_marginStart="@dimen/height_middle_margin"
+        android:layout_marginTop="@dimen/low_middle_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/dih_mark_layout"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/font_spinner"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_largest_spacing" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_largest_spacing"
+                android:layout_weight="1"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="@dimen/font_information" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/square_width"
+            android:id="@+id/dih_mark_layout"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorOrangeMiddle"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_largest"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/dih_mark"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:background="@color/colorOrangeMiddle"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_largest" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:letterSpacing="@dimen/font_largest_spacing"
+                android:id="@+id/score_item"
+                android:textSize="@dimen/font_square"
+                android:layout_gravity="top"
+                android:gravity="top|center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:text="@string/score"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

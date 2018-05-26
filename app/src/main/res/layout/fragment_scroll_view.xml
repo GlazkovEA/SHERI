@@ -1,0 +1,611 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll"
+    tools:context="com.homounikumus1.sheri.add_package.ScrollViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/low_middle_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/middle_margin"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:textSize="@dimen/font_large"
+                android:clickable="true"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="@dimen/tiny"
+                android:id="@+id/bun"
+                android:fontFamily="@font/open_sans"
+                android:layout_height="wrap_content"
+                android:text="@string/bun"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/bun_lines_width"
+                android:layout_height="@dimen/all_lines_height"
+                android:id="@+id/img_bun"
+                android:layout_below="@+id/bun"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/bun_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/bun_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/bun_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/font_large"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:clickable="true"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/open_sans"
+                android:id="@+id/ingredients"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredients"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/ingredients_lines_width"
+                android:layout_height="@dimen/all_lines_height"
+                android:id="@+id/img_ingredients"
+                android:layout_below="@+id/ingredients"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/ingredients_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/ingredients_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/ingredients_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:textColor="@color/colorBlack"
+                android:clickable="true"
+                android:layout_marginStart="@dimen/tiny"
+                android:id="@+id/cutlet"
+                android:fontFamily="@font/open_sans"
+                android:textSize="@dimen/font_large"
+                android:layout_height="wrap_content"
+                android:text="@string/cutlet"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/cutlet_lines_width"
+                android:layout_height="@dimen/all_lines_height"
+                android:id="@+id/img_cutlet"
+                android:layout_below="@+id/cutlet"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/cutlet_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/cutlet_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/cutlet_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_large"
+                android:clickable="true"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/saturation"
+                android:layout_height="wrap_content"
+                android:text="@string/saturation"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/saturation_lines_width"
+                android:layout_height="@dimen/all_lines_height"
+                android:background="@color/colorHintGrey"
+                android:id="@+id/img_saturation"
+                android:layout_below="@+id/saturation"
+                android:layout_marginTop="@dimen/low_middle_margin" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/saturation_minus"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:id="@+id/saturation_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:textSize="@dimen/plus_minus_button_font"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/saturation_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_large"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="@dimen/tiny"
+                android:id="@+id/succulence"
+                android:layout_height="wrap_content"
+                android:text="@string/succulence"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/succulence_lines_width"
+                android:layout_height="@dimen/all_lines_height"
+                android:id="@+id/img_succulence"
+                android:layout_below="@+id/succulence"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/succulence_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/succulence_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/succulence_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/text"
+                android:layout_margin="@dimen/little_margin"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_largest_spacing"
+                android:gravity="center_horizontal"
+                android:text="@string/coast" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="@dimen/last_buttons_width"
+                    android:textSize="@dimen/font_larger"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/open_sans_light"
+                    android:id="@+id/coastMinus"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_left"
+                    android:text="-" />
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="@dimen/last_button_center_width"
+                        android:layout_height="@dimen/last_button_center_height"
+                        android:gravity="center"
+                        android:textSize="@dimen/plus_minus_button_font"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/open_sans_light"
+                        android:background="@drawable/button_price"
+                        android:layout_gravity="center"
+                        android:id="@+id/coast_score"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:text="0"
+                        >
+                    </Button>
+
+                    <EditText
+                        android:layout_width="@dimen/last_button_center_width"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:background="#ffe9d1"
+                        android:inputType="numberDecimal"
+
+                        android:maxLength="7"
+                        android:id="@+id/edit_price"
+                        android:layout_height="@dimen/last_button_center_height" />
+
+
+                </RelativeLayout>
+
+
+
+                <Button
+                    android:layout_width="@dimen/last_buttons_width"
+                    android:textSize="@dimen/font_larger"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/open_sans_light"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/coastPlus"
+                    android:background="@drawable/button_right"
+                    android:text="+" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

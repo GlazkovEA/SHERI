@@ -1,0 +1,412 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.homounikumus1.sheri.add_package.PlaceMarkFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/middle_margin">
+
+            <TextView
+                android:id="@+id/interior"
+                android:textSize="@dimen/font_large"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:layout_marginStart="@dimen/tiny"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/interior"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/interior_lines_width"
+                android:id="@+id/img_interior"
+                android:layout_height="@dimen/all_lines_height"
+                android:layout_below="@+id/interior"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/interior_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/interior_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/interior_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/large_margin">
+
+            <TextView
+                android:id="@+id/music"
+                android:textSize="@dimen/font_large"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:layout_marginStart="@dimen/tiny"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/music"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/music_lines_width"
+                android:id="@+id/img_music"
+                android:layout_height="@dimen/all_lines_height"
+                android:layout_below="@+id/music"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/music_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/music_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/music_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/large_margin">
+
+            <TextView
+                android:id="@+id/staff"
+                android:textSize="@dimen/font_large"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:layout_marginStart="@dimen/tiny"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/staff"
+              />
+
+            <ImageView
+                android:layout_width="@dimen/staff_lines_width"
+                android:id="@+id/img_staff"
+                android:layout_height="@dimen/all_lines_height"
+                android:layout_below="@+id/staff"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/staff_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/staff_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/staff_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/large_margin">
+
+            <TextView
+                android:id="@+id/purity"
+                android:textSize="@dimen/font_large"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/purity"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/purity_lines_width"
+                android:id="@+id/img_purity"
+                android:layout_marginStart="@dimen/tiny"
+                android:layout_height="@dimen/all_lines_height"
+                android:layout_below="@+id/purity"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:background="@color/colorHintGrey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/all_buttons_set_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_left"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/purity_minus"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_left"
+                            android:text="-   "
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="@dimen/plus_minus_button_height"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:clickable="false"
+                        android:textColor="@color/colorHintGrey"
+                        android:fontFamily="@font/open_sans_light"
+                        android:id="@+id/purity_score"
+                        android:background="@drawable/center"
+                        android:hint="0"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/plus_minus_button_font">
+
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/plus_minus_button_width"
+                        android:layout_height="@dimen/plus_minus_button_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_right"
+
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/plus_minus_button_font"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/open_sans_light"
+                            android:id="@+id/purity_plus"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_right"
+                            android:text="   +"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+</LinearLayout>

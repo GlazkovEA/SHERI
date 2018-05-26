@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ImageView android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:id="@+id/dialog"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/icon_width"
+        android:id="@+id/finger"
+        android:layout_margin="@dimen/little_margin"
+        android:layout_height="@dimen/icon_height"
+        android:background="@drawable/photo_icon"
+        />
+</RelativeLayout>
+
+

@@ -1,0 +1,124 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_margin="@dimen/middle_margin"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/place_fragment"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/autocomplete_fragment_layout"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/height_middle_margin"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/little_margin"
+                android:layout_marginEnd="@dimen/little_margin"
+                android:clickable="true"
+                android:id="@+id/choose_place_layout"
+                android:background="@drawable/rectangle_ripple"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/open_sans"
+                    android:letterSpacing="@dimen/font_large_spacing"
+                    android:id="@+id/place_chooser"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="@dimen/font_small"
+                    android:layout_marginBottom="@dimen/little_margin_plus"
+                    android:text="@string/place_name_second"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_marginStart="@dimen/little_margin_plus"
+                    android:textSize="@dimen/font_large"
+                    android:layout_marginBottom="@dimen/little_margin_plus"
+                    android:clickable="false"
+                    android:textColorHint="@color/colorUltraLightGrey"
+                    android:id="@+id/choose_place"
+                    android:layout_gravity="bottom"
+                    android:hint="@string/choose_place"
+                    android:letterSpacing="@dimen/font_larger_spacing"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/middle_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_btn"
+                android:src="@drawable/ic_launcher"
+                android:id="@+id/tap" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/firs_line"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:layout_height="@dimen/all_lines_height"
+            android:background="@color/colorLightGrey"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hint_txt"
+        android:clickable="true"
+        android:hint="@string/place_name"
+        android:layout_marginTop="@dimen/larger_margin_plus"
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:letterSpacing="@dimen/font_large_spacing"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="@dimen/font_small"
+            android:id="@+id/place_name"
+            android:layout_marginBottom="@dimen/little_margin_plus"
+            android:text="@string/dish_name"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_txt"
+            android:layout_marginStart="@dimen/little_margin_plus"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/little_margin_plus"
+            android:fontFamily="@font/open_sans"
+            android:letterSpacing="@dimen/font_large_spacing"
+            android:inputType="textCapWords|textAutoCorrect"
+            android:textColorHint="@color/colorUltraLightGrey"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_dish" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_lines_height"
+            android:id="@+id/second_line"
+            android:background="@color/colorLightGrey"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

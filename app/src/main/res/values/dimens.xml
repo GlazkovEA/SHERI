@@ -1,0 +1,120 @@
+<resources>
+    <!-- font sizes -->
+    <dimen name="font_biggest_numeric">55sp</dimen>
+    <dimen name="font_big_numeric">42sp</dimen>
+    <dimen name="font_largest">30sp</dimen>
+    <dimen name="font_larger">25sp</dimen>
+    <dimen name="font_large_plus">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">11sp</dimen>
+
+
+    <!-- font spacing -->
+    <dimen name="font_largest_spacing">0.08</dimen>
+    <dimen name="font_larger_spacing">0.06</dimen>
+    <dimen name="font_large_spacing">0.04</dimen>
+    <dimen name="line_spacing_extra">6.7sp</dimen>
+
+
+    <!-- typical margin -->
+    <dimen name="larger_margin_plus">80dp</dimen>
+    <dimen name="larger_margin">70dp</dimen>
+    <dimen name="low_larger_margin">50dp</dimen>
+    <dimen name="large_margin">40dp</dimen>
+    <dimen name="height_middle_margin">30dp</dimen>
+    <dimen name="middle_margin_plus">26dp</dimen>
+    <dimen name="middle_margin">20dp</dimen>
+    <dimen name="low_middle_margin">10dp</dimen>
+    <dimen name="little_margin_plus">8dp</dimen>
+    <dimen name="little_margin_plus_two">7dp</dimen>
+    <dimen name="little_margin">5dp</dimen>
+    <dimen name="tiny">2dp</dimen>
+
+    <!-- title margin -->
+    <dimen name="title_margin">15dp</dimen>
+    <dimen name="fragment_title_margin">70dp</dimen>
+
+
+
+    <!-- typical padding -->
+    <dimen name="low_larger_padding">50dp</dimen>
+    <dimen name="large_padding">40dp</dimen>
+    <dimen name="height_middle_padding">30dp</dimen>
+    <dimen name="middle_padding">20dp</dimen>
+    <dimen name="low_middle_padding_plus">16dp</dimen>
+    <dimen name="low_middle_padding">10dp</dimen>
+
+
+
+
+
+
+    <!-- some objects -->
+    <!-- plus/minus buttons -->
+    <dimen name="all_buttons_set_width">106dp</dimen>
+    <dimen name="plus_minus_button_height">42dp</dimen>
+    <dimen name="plus_minus_button_width">53dp</dimen>
+    <dimen name="plus_minus_button_font">20sp</dimen>
+    <dimen name="last_buttons_width">50sp</dimen>
+    <dimen name="last_button_center_height">48sp</dimen>
+    <dimen name="last_button_center_width">120sp</dimen>
+
+
+    <!-- spinner -->
+    <dimen name="font_spinner">20sp</dimen>
+    <dimen name="spinner_height">20dp</dimen>
+    <dimen name="spinner_width">260dp</dimen>
+    <dimen name="spinner_offset">70dp</dimen>
+    <dimen name="spinner_margin_end">18dp</dimen>
+    <dimen name="drop_down_spinner_height">55dp</dimen>
+
+    <!-- photo -->
+    <dimen name="icon_height">15dp</dimen>
+    <dimen name="icon_width">15dp</dimen>
+    <dimen name="photo_width">280dp</dimen>
+    <dimen name="photo_height">220dp</dimen>
+
+    <!-- photo_dialog -->
+    <dimen name="cross">50dp</dimen>
+    <dimen name="photo_layout_width">360dp</dimen>
+    <dimen name="photo_layout_height">300dp</dimen>
+
+
+    <!-- dish_list-->
+    <dimen name="dish_list_height">75dp</dimen>
+    <dimen name="square_width">55dp</dimen>
+    <dimen name="font_square">12sp</dimen>
+    <dimen name="font_information">12sp</dimen>
+
+    <!-- lines-->
+    <dimen name="all_lines_height">1.5dp</dimen>
+    <dimen name="bun_lines_width">70dp</dimen>
+    <dimen name="ingredients_lines_width">140dp</dimen>
+    <dimen name="cutlet_lines_width">90dp</dimen>
+    <dimen name="saturation_lines_width">158dp</dimen>
+    <dimen name="succulence_lines_width">100dp</dimen>
+    <dimen name="interior_lines_width">108dp</dimen>
+    <dimen name="music_lines_width">85dp</dimen>
+    <dimen name="staff_lines_width">104dp</dimen>
+    <dimen name="purity_lines_width">90dp</dimen>
+    <dimen name="appearance_lines_width">140dp</dimen>
+    <dimen name="sheri_line_width">100dp</dimen>
+
+    <!-- FeatureCoverFlow-->
+    <dimen name="cover_flow_height">60dp</dimen>
+    <dimen name="cover_flow_width">90dp</dimen>
+    <dimen name="reflection_gap">1000dp</dimen>
+    <dimen name="max_scale_factor">2.5</dimen>
+    <dimen name="rotation_threshold">0.5</dimen>
+    <dimen name="scaling_threshold">0.5</dimen>
+    <dimen name="spacing">0.6</dimen>
+
+    <!-- Drawer-->
+    <dimen name="drawer_font">20sp</dimen>
+    <dimen name="drawer_width">340sp</dimen>
+    <dimen name="text_margin_top">15dp</dimen>
+    <dimen name="text_margin_bottom">15dp</dimen>
+    <dimen name="text_margin_start">50dp</dimen>
+    <dimen name="image_margin_start">50dp</dimen>
+</resources>

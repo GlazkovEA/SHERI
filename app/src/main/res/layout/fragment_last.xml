@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.homounikumus1.sheri.add_package.LastFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/my_burger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="@dimen/font_large_spacing"
+                    android:text="@string/my_burger"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_large" />
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/tiny"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:gravity="top"
+                android:letterSpacing="@dimen/font_largest_spacing"
+                android:text="@string/dish_name"
+                android:textColor="@color/colorGrey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/general_dish_mark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="end"
+            android:text="10"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/font_biggest_numeric" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_weight="2.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/middle_margin_plus"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/my_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="@dimen/font_large_spacing"
+                    android:text="@string/my_place"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_large" />
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_largest_spacing"
+                android:text="@string/place_name"
+                android:textColor="@color/colorGrey" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/general_place_mark"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/little_margin_plus_two"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_weight="2.5"
+            android:gravity="top|end"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_big_numeric" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_weight="3"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/low_middle_margin"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:text="@string/general_mark"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_large" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:letterSpacing="@dimen/font_large_spacing"
+                android:text="@string/place_plus_place"
+                android:textColor="@color/colorGrey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/general_mark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:layout_marginBottom="@dimen/little_margin"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_big_numeric" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_weight="2.3">
+
+        <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+            android:id="@+id/coverflow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            coverflow:coverHeight="@dimen/cover_flow_height"
+            coverflow:coverWidth="@dimen/cover_flow_width"
+            coverflow:reflectionGap="@dimen/reflection_gap"
+            coverflow:maxScaleFactor="@dimen/max_scale_factor"
+            coverflow:rotationThreshold="@dimen/rotation_threshold"
+            coverflow:scalingThreshold="@dimen/scaling_threshold"
+            coverflow:spacing="@dimen/spacing" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

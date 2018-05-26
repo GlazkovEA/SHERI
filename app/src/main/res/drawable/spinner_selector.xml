@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" >
+        <layer-list>
+            <item>
+                <bitmap
+                    android:gravity="end|center_vertical"
+                    android:src="@drawable/angle_orange"
+                    />
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

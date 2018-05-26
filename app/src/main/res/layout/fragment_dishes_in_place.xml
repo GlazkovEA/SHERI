@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/height_middle_margin"
+    android:layout_marginLeft="@dimen/middle_margin"
+    android:layout_marginRight="@dimen/middle_margin"
+    android:layout_marginTop="@dimen/larger_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.homounikumus1.sheri.drawer_fragments.MyMarksFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:id="@+id/place_name"
+        android:text="@string/app_name"
+        android:textSize="@dimen/font_larger"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/all_lines_height"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:background="@color/colorOrange"
+        android:id="@+id/line"
+        android:layout_below="@+id/place_name"
+        />
+
+    <ListView
+        android:id="@+id/items"
+        android:layout_above="@+id/addBtn"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/larger_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"></ListView>
+
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/middle_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_add"
+        android:clickable="true"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:letterSpacing="@dimen/font_largest_spacing"
+        android:paddingBottom="@dimen/low_middle_padding_plus"
+        android:paddingTop="@dimen/low_middle_padding_plus"
+        android:src="@mipmap/bg"
+        android:text="@string/show_map"
+        android:textColor="@color/colorBlack"
+        />
+
+</RelativeLayout>

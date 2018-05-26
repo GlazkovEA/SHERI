@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_background"
+    tools:context="com.homounikumus1.sheri.add_package.AddActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/textTop"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/open_sans"
+        android:letterSpacing="@dimen/font_larger_spacing"
+        android:layout_marginTop="@dimen/low_middle_margin"
+        android:id="@+id/title"
+        android:textSize="@dimen/font_larger"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:layout_marginRight="@dimen/middle_margin"
+        android:layout_marginLeft="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/height_middle_margin"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/place_container"
+            >
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/middle_margin"
+            android:layout_marginEnd="@dimen/middle_margin"
+            android:fontFamily="@font/open_sans"
+            android:letterSpacing="@dimen/font_largest_spacing"
+            android:id="@+id/btnNext"
+            android:text="@string/next"
+            android:textColor="@color/colorWhite" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/middle_padding"
+            map:piv_padding="@dimen/low_middle_padding_plus"
+            map:piv_selectedColor="@color/colorOrange"
+            map:piv_dynamicCount="true"
+            map:piv_unselectedColor="@color/colorUltraLightOrange"
+            map:piv_animationType="fill"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

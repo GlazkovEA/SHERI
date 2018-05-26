@@ -1,0 +1,84 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ed7902</item>
+        <item name="colorPrimaryDark">#ed7902</item>
+        <item name="colorAccent">#ed7902</item>
+        <item name="android:textAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="android:buttonStyle">@style/NotCapsButton</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionMode</item>
+        <item name="actionModeCloseDrawable">@drawable/angle_white</item>
+    </style>
+
+    <style name="ActionMode"  parent="@style/Widget.AppCompat.ActionMode" >
+        <item name="background">@color/colorUltraLightOrange</item>
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+
+    </style>
+
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="NotCapsButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:textSize">18sp</item> <!-- menu item text size-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">end</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:listDivider">@color/colorBlack</item>
+        <item name="android:textAppearance">@style/TextAppearance.Design.Tab</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
+
+    <style name="spinner"   parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">@android:color/transparent</item>
+        <item name="android:backgroundSplit">@android:color/transparent</item>
+        <item name="android:backgroundTintMode">@android:color/transparent</item>
+
+
+
+        <item name="android:shadowColor">@android:color/transparent</item>
+
+        <item name="android:spinnerStyle">@null</item>
+        <item name="android:spinnerDropDownItemStyle">@null</item>
+        <item name="android:popupMenuStyle">@null</item>
+        <item name="android:actionDropDownStyle">@null</item>
+    </style>
+
+</resources>

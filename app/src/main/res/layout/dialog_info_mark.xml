@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="@dimen/large_margin"
+        android:layout_height="@dimen/height_middle_margin"
+        android:id="@+id/close_btn"
+        android:layout_margin="@dimen/low_middle_margin"
+        android:background="@drawable/menu_btn"
+        android:src="@drawable/cross"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/middle_padding"
+        android:layout_height="wrap_content"
+        android:id="@+id/dish"
+        android:text="@string/cutlet"
+        android:textSize="@dimen/font_larger"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/all_lines_height"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:background="@color/colorOrangeMiddle"
+        android:id="@+id/line"
+        android:layout_below="@+id/dish"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:id="@+id/dish_info"
+        android:textSize="@dimen/font_normal"
+        android:layout_below="@+id/line"
+        />
+
+</RelativeLayout>

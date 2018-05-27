@@ -4,7 +4,9 @@
     >
 
     <item android:id="@+id/delete"
-        android:title="ДА" />
+        android:title=""
+        android:icon="@drawable/delete_icon"
+        />
 
 
 

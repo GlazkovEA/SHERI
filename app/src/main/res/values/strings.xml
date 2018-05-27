@@ -74,6 +74,7 @@
     <string name="appraised_dishes">Оцененных блюд:</string>
     <string name="mark_string">оценку</string>
     <string name="mark_string_second">оценки</string>
+    <string name="mark_string_third">оценок</string>
     <string name="score">балла</string>
     <string name="score_plus">баллов</string>
     <string name="score_one">балл</string>
@@ -118,6 +119,8 @@
     <!-- delete -->
     <string name="ok">OK</string>
     <string name="no">NO</string>
+    <string name="chose1">пункт выбран</string>
+    <string name="chose2">пунктa выбрано</string>
     <string name="chose">пунктов выбрано</string>
     <string name="del">Удалить</string>
     <string name="delete">Вы действительно хотите удалить %d %s</string>

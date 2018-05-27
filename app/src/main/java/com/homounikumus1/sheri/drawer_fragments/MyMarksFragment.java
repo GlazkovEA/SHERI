@@ -587,8 +587,20 @@ public class MyMarksFragment extends Fragment {
                 //set action mode title on item selection
                 mode.setTitle(getString(R.string.del));
             assert mode != null;
-            mode.setSubtitle(String.valueOf(adapterForLocalMarks
-                        .getSelectedCount()) + " " + getString(R.string.chose));
+
+            String subTitleSize = String.valueOf(adapterForLocalMarks
+                    .getSelectedCount());
+            String subTitle = getString(R.string.chose1);
+
+            if (check(subTitleSize)) {
+                subTitle = getString(R.string.chose2);
+            } else {
+                if (subTitleSize.endsWith("11"))
+                    subTitle = getString(R.string.chose);
+                if (!subTitleSize.endsWith("1"))
+                    subTitle = getString(R.string.chose);
+            }
+            mode.setSubtitle(subTitleSize + " " + subTitle);
 
             if (!selectedItem.contains(item)) {
                 selectedItem.add(item);
@@ -645,9 +657,16 @@ public class MyMarksFragment extends Fragment {
             TextView delete = alertDialog.findViewById(R.id.delete);
             String markString = getString(R.string.mark_string);
             String size = String.valueOf(selectedItem.size());
-            if (size.endsWith("2") || size.endsWith("3") || size.endsWith("4")) {
+
+            if (check(size)) {
                 markString = getString(R.string.mark_string_second);
+            } else {
+                if (size.endsWith("11"))
+                    markString = getString(R.string.mark_string_third);
+                if (!size.endsWith("1"))
+                    markString = getString(R.string.mark_string_third);
             }
+
             String deleteString = getString(R.string.delete, selectedItem.size(), markString);
             delete.setText(deleteString);
 
@@ -689,6 +708,20 @@ public class MyMarksFragment extends Fragment {
             alert.onBackPressed();
 
 
+        }
+
+        private boolean check (String s) {
+            String[] mass = {"12", "13", "14"};
+            if (s.endsWith("2") || s.endsWith("3") || s.endsWith("4")) {
+                for (String mas : mass) {
+                    if (s.endsWith(mas)) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            return false;
         }
 
         private void delete() {

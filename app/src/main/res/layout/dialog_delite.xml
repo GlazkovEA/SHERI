@@ -5,9 +5,11 @@
     <TextView
         android:id="@+id/delete"
         android:layout_width="wrap_content"
-        android:layout_margin="20dp"
+        android:fontFamily="@font/open_sans"
+        android:layout_margin="@dimen/middle_margin"
+        android:letterSpacing="@dimen/font_larger_spacing"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="@dimen/font_large"
         android:gravity="center"
 
         />

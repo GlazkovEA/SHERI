@@ -9,24 +9,24 @@
         <item name="android:buttonStyle">@style/NotCapsButton</item>
         <item name="windowActionModeOverlay">true</item>
         <item name="actionModeStyle">@style/ActionMode</item>
-        <item name="actionModeCloseDrawable">@drawable/angle_white</item>
+        <item name="actionModeCloseDrawable">@drawable/angle_orange_left</item>
     </style>
 
     <style name="ActionMode"  parent="@style/Widget.AppCompat.ActionMode" >
-        <item name="background">@color/colorBlack</item>
+        <item name="background">@color/colorWhite</item>
         <item name="titleTextStyle">@style/TitleTextStyle</item>
         <item name="subtitleTextStyle">@style/SubTitleTextStyle</item>
 
     </style>
 
     <style name="SubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorGrey</item>
         <item name="android:letterSpacing">0.08</item>
         <item name="android:fontFamily">@font/open_sans</item>
     </style>
 
     <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textColor">@color/colorBlack</item>
         <item name="android:letterSpacing">0.08</item>
         <item name="android:fontFamily">@font/open_sans</item>
     </style>

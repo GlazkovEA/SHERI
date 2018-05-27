@@ -9,7 +9,7 @@
         <item name="android:buttonStyle">@style/NotCapsButton</item>
         <item name="windowActionModeOverlay">true</item>
         <item name="actionModeStyle">@style/ActionMode</item>
-        <item name="actionModeCloseDrawable">@drawable/angle_orange_left</item>
+        <item name="actionModeCloseDrawable">@drawable/angle_black</item>
     </style>
 
     <style name="ActionMode"  parent="@style/Widget.AppCompat.ActionMode" >
@@ -20,15 +20,17 @@
     </style>
 
     <style name="SubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColor">@color/colorLightGrey</item>
         <item name="android:letterSpacing">0.08</item>
         <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">@dimen/font_information</item>
     </style>
 
     <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:letterSpacing">0.08</item>
         <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">@dimen/font_spinner</item>
     </style>
 
     <style name="NotCapsButton" parent="Widget.AppCompat.Button">

@@ -148,41 +148,7 @@ public class MyMarksFragment extends Fragment {
 
         sort = rootView.findViewById(R.id.sort_list);
 
-
-                 /*   items.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-                        @Override
-                        public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                            if (actionMode == null) {
-                                items.setClickable(false);
-                                Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
-                                toolbar.startActionMode(callback);
-                                //actionMode = getActivity().startActionMode(callback);
-
-                            }
-                            else
-                                actionMode.finish();
-
-                            return false;
-                        }
-                    });*/
-
-
         start();
-
-        //  final List<LocalMark> marks = new ArrayList<>();
-        // addInMarksList(marks);
-
-
-        /*if (marks.size() > 0) {
-            firstButton.setVisibility(View.INVISIBLE);
-        } else {
-            sort.setVisibility(View.INVISIBLE);
-            addBtn.setVisibility(View.INVISIBLE);
-            ImageView line = rootView.findViewById(R.id.line);
-            line.setVisibility(View.INVISIBLE);
-            TextView place = rootView.findViewById(R.id.place);
-            place.setVisibility(View.INVISIBLE);
-        }*/
 
         return rootView;
     }
@@ -372,9 +338,7 @@ public class MyMarksFragment extends Fragment {
                                             .setTarget(row.findViewById(R.id.square))
                                             .setPrimaryText(getString(R.string.did_show_item))
                                             .setBackgroundColour(Color.parseColor("#F2ed7c02"))
-                                            // .setPromptBackground(new RectanglePromptBackground())
-                                            // .setPromptFocal(new RectanglePromptFocal())
-                                            .setFocalRadius(500f)
+                                            .setFocalRadius(350f)
                                             .setAnimationInterpolator(new FastOutSlowInInterpolator())
                                             .setPromptStateChangeListener(new MaterialTapTargetPrompt.PromptStateChangeListener()
                                             {

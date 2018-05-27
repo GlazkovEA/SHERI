@@ -102,9 +102,7 @@ public class LastFragment extends Fragment {
                     .setTarget(layout.findViewById(R.id.my_burger))
                     .setPrimaryText(getString(R.string.did_show_dish))
                     .setBackgroundColour(Color.parseColor("#F2ed7c02"))
-                   // .setPromptBackground(new RectanglePromptBackground())
-                   // .setPromptFocal(new RectanglePromptFocal())
-                    .setFocalRadius(500f)
+                    .setFocalRadius(350f)
                     .setAnimationInterpolator(new FastOutSlowInInterpolator())
                     .setPromptStateChangeListener(new MaterialTapTargetPrompt.PromptStateChangeListener()
                     {

@@ -89,7 +89,7 @@ public class MyPlace extends Fragment {
                     .setTarget(layout.findViewById(R.id.tap))
                     .setPrimaryText(getString(R.string.did_show_place))
                     .setTextGravity(Gravity.CENTER)
-                    .setFocalRadius(500f)
+                    .setFocalRadius(300f)
                     .setBackgroundColour(Color.parseColor("#F2ed7c02"))
                     .setAnimationInterpolator(new FastOutSlowInInterpolator())
                     .setPromptStateChangeListener(new MaterialTapTargetPrompt.PromptStateChangeListener()

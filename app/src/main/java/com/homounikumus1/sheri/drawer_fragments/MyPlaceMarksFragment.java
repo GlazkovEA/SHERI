@@ -41,7 +41,6 @@ public class MyPlaceMarksFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-       // marks.clear();
     }
 
     public MyPlaceMarksFragment() {
@@ -90,19 +89,6 @@ public class MyPlaceMarksFragment extends Fragment {
         addBtn = rootView.findViewById(R.id.map_btn);
 
         final ArrayList<LocalMark> marks = addInMarksList();
-
-        /*addBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("Need_This", marks.size() + " размер");
-                Fragment fragment = GeneralMarks.newInstance(marks);
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.container, fragment, "visible_fragment");
-                ft.addToBackStack(null);
-                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                ft.commit();
-            }
-        });*/
 
         if (marks.size() > 0) {
             firstButton.setVisibility(View.INVISIBLE);

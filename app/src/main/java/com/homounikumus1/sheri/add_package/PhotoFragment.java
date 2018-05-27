@@ -129,9 +129,7 @@ public class PhotoFragment extends Fragment implements SurfaceHolder.Callback, a
             new MaterialTapTargetPrompt.Builder(getActivity())
                     .setTarget(rowView.findViewById(R.id.appearance))
                     .setPrimaryText(R.string.did_show_bun)
-                    //  .setPromptBackground(new RectanglePromptBackground())
-                    // .setPromptFocal(new RectanglePromptFocal())
-                    .setFocalRadius(500f)
+                    .setFocalRadius(300f)
                     .setBackgroundColour(Color.parseColor("#F2ed7c02"))
                     .setAnimationInterpolator(new FastOutSlowInInterpolator())
                     .setPromptStateChangeListener(new MaterialTapTargetPrompt.PromptStateChangeListener()
@@ -202,13 +200,7 @@ public class PhotoFragment extends Fragment implements SurfaceHolder.Callback, a
             @Override
             public void onClick(View v) {
                 shotBtn.startAnimation(animButton);
-                //if (ContextCompat.checkSelfPermission(rowView.getContext(), Manifest.permission.CAMERA)
-                //      == PackageManager.PERMISSION_GRANTED) {
                 doPhoto();
-                // Permission is not granted
-                // }
-
-
             }
         });
 
